@@ -33,9 +33,9 @@ All Tests are parametrized to run for all the clusters defined in ./test/conftes
 * test_login_with_google (ToDos are pending)
 
 ## Run the Tests
-* To Run the API basic tests you need to run: 'py -m pytest -m api_tests --html=./reports/report-api-tests.html'
-* To Run the UI tests you need to run: 'py -m pytest -m ui_tests --html=./reports/report-ui-tests.html'
-* To Run all tests you need to run: 'py -m pytest --html=./reports/report-all-tests.html'
+* To Run the API basic tests you need to run: `py -m pytest -m api_tests --html=./reports/report-api-tests.html`
+* To Run the UI tests you need to run: `py -m pytest -m ui_tests --html=./reports/report-ui-tests.html`
+* To Run all tests you need to run: `py -m pytest --html=./reports/report-all-tests.html`
 
 ## Test Cases Pending to Implement
 * test_login_with_empty_fields
