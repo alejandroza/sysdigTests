@@ -24,7 +24,7 @@ To install ChromeDriver on Windows:
 1. Create a folder named `C:\Selenium`.
 2. Move the executables into this folder.
 
-## Test Cases Cover
+## Test Cases Covered
 All Tests are parametrized to run for all the clusters defined in ./test/conftest.py
 * test_api_clusters
 * test_login_with_invalid_credentials
@@ -33,6 +33,7 @@ All Tests are parametrized to run for all the clusters defined in ./test/conftes
 * test_login_with_google (ToDos are pending)
 
 ## Run the Tests
+Remember all Tests are parametrized to run for all the clusters defined in ./test/conftest.py
 * To Run the API basic tests you need to run: `py -m pytest -m api_tests --html=./reports/report-api-tests.html`
 * To Run the UI tests you need to run: `py -m pytest -m ui_tests --html=./reports/report-ui-tests.html`
 * To Run all tests you need to run: `py -m pytest --html=./reports/report-all-tests.html`
