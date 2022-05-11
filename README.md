@@ -24,6 +24,19 @@ To install ChromeDriver on Windows:
 1. Create a folder named `C:\Selenium`.
 2. Move the executables into this folder.
 
+## Get Started
+Since this project uses Pipenv for package management please follow these steps:
+1. Navigate to the project directory
+2. Run `pipenv install` Pipenv will read the Pipfile and Pipfile.lock files for the project, create the virtual environment, and install all of the dependencies as needed.
+3. Run `pipenv shell` to activate the virtual environment
+Now you will be able to run the tests.
+
+## Run the Tests
+Remember all Tests are parametrized to run in parallel and to run for all the clusters defined in ./test/conftest.py
+* To Run the API basic tests you need to run: `py -m pytest -n 4 -m api_tests --html=./reports/report-api-tests.html`
+* To Run the UI tests you need to run: `py -m pytest -n 4 -m ui_tests --html=./reports/report-ui-tests.html`
+* To Run all tests you need to run: `py -m pytest -n 4 --html=./reports/report-all-tests.html`
+
 ## Test Cases Covered
 All Tests are parametrized to run for all the clusters defined in ./test/conftest.py
 * test_api_clusters
@@ -31,12 +44,6 @@ All Tests are parametrized to run for all the clusters defined in ./test/conftes
 * test_validate_forgot_password
 * test_validate_sign_up
 * test_login_with_google (ToDos are pending)
-
-## Run the Tests
-Remember all Tests are parametrized to run for all the clusters defined in ./test/conftest.py
-* To Run the API basic tests you need to run: `py -m pytest -m api_tests --html=./reports/report-api-tests.html`
-* To Run the UI tests you need to run: `py -m pytest -m ui_tests --html=./reports/report-ui-tests.html`
-* To Run all tests you need to run: `py -m pytest --html=./reports/report-all-tests.html`
 
 ## Test Cases Pending to Implement
 * test_login_with_empty_fields
@@ -48,5 +55,10 @@ Remember all Tests are parametrized to run for all the clusters defined in ./tes
 * test_login_with_openid
 * test_go_back_from_openid
 
-## Improvements for the page
-* Validate the correct email structure (.com part is not required)
+## Improvements
+* Functionality: Validate the correct email structure (.com part is not required)
+* Development: Define best practices for elements declaration, to avoid flakiness or broken tests
+* Framework: Define best practices and establish naming conventions
+* Framework: Implement/Configure Multiple Browsers
+* Framework: Implement Race Conditions, for instance, using the explicit waits from the WebDriverWait class with expected_conditions methods.
+* Strategies: Define clear criteria for automating tests in the corresponding testing levels

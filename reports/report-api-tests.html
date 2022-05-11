@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report-api-tests.html</h1>
-    <p>Report generated on 05-May-2022 at 10:04:04 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 11-May-2022 at 10:18:17 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -254,13 +254,13 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Windows-10-10.0.19043-SP0</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{"html": "3.1.1", "metadata": "2.0.1"}</td></tr>
+        <td>{"forked": "1.4.0", "html": "3.1.1", "metadata": "2.0.1", "xdist": "2.5.0"}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.10.4</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 3.01 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>1 tests ran in 0.97 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">4 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -271,39 +271,48 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="error results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_api_clusters.py::test_api_clusters[https://eu1.app.sysdig.com/#/login]</td>
-          <td class="col-duration">0.75</td>
+          <td class="col-result">Error</td>
+          <td class="col-name">tests/test_login.py::collect</td>
+          <td class="col-duration"></td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
+            <div class="log">..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:265: in __call__<br/>    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_manager.py:80: in _hookexec<br/>    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:262: in pytest_pycollect_makeitem<br/>    return list(collector._genfunctions(name, obj))<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:489: in _genfunctions<br/>    self.ihook.pytest_generate_tests.call_extra(methods, dict(metafunc=metafunc))<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:292: in call_extra<br/>    return self(**kwargs)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:265: in __call__<br/>    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_manager.py:80: in _hookexec<br/>    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:148: in pytest_generate_tests<br/>    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:1272: in parametrize<br/>    argnames, parametersets = ParameterSet._for_parametrize(<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\mark\structures.py:160: in _for_parametrize<br/>    parameters = cls._parse_parametrize_parameters(argvalues, force_tuple)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\mark\structures.py:146: in _parse_parametrize_parameters<br/>    return [<br/><span class="error">E   TypeError: &#x27;function&#x27; object is not iterable</span><br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_api_clusters.py::test_api_clusters[https://app.sysdigcloud.com/#/login]</td>
-          <td class="col-duration">0.53</td>
+          <td class="col-result">Error</td>
+          <td class="col-name">tests/test_login.py::collect</td>
+          <td class="col-duration"></td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
+            <div class="log">..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:265: in __call__<br/>    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_manager.py:80: in _hookexec<br/>    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:262: in pytest_pycollect_makeitem<br/>    return list(collector._genfunctions(name, obj))<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:489: in _genfunctions<br/>    self.ihook.pytest_generate_tests.call_extra(methods, dict(metafunc=metafunc))<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:292: in call_extra<br/>    return self(**kwargs)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:265: in __call__<br/>    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_manager.py:80: in _hookexec<br/>    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:148: in pytest_generate_tests<br/>    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:1272: in parametrize<br/>    argnames, parametersets = ParameterSet._for_parametrize(<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\mark\structures.py:160: in _for_parametrize<br/>    parameters = cls._parse_parametrize_parameters(argvalues, force_tuple)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\mark\structures.py:146: in _parse_parametrize_parameters<br/>    return [<br/><span class="error">E   TypeError: &#x27;function&#x27; object is not iterable</span><br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_api_clusters.py::test_api_clusters[https://us2.app.sysdig.com/#/login]</td>
-          <td class="col-duration">0.54</td>
+          <td class="col-result">Error</td>
+          <td class="col-name">tests/test_login.py::collect</td>
+          <td class="col-duration"></td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
+            <div class="log">..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:265: in __call__<br/>    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_manager.py:80: in _hookexec<br/>    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:262: in pytest_pycollect_makeitem<br/>    return list(collector._genfunctions(name, obj))<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:489: in _genfunctions<br/>    self.ihook.pytest_generate_tests.call_extra(methods, dict(metafunc=metafunc))<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:292: in call_extra<br/>    return self(**kwargs)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:265: in __call__<br/>    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_manager.py:80: in _hookexec<br/>    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:148: in pytest_generate_tests<br/>    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:1272: in parametrize<br/>    argnames, parametersets = ParameterSet._for_parametrize(<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\mark\structures.py:160: in _for_parametrize<br/>    parameters = cls._parse_parametrize_parameters(argvalues, force_tuple)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\mark\structures.py:146: in _parse_parametrize_parameters<br/>    return [<br/><span class="error">E   TypeError: &#x27;function&#x27; object is not iterable</span><br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_api_clusters.py::test_api_clusters[https://app.au1.sysdig.com/#/login]</td>
-          <td class="col-duration">1.10</td>
+          <td class="col-result">Error</td>
+          <td class="col-name">tests/test_login.py::collect</td>
+          <td class="col-duration"></td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log">..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:265: in __call__<br/>    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_manager.py:80: in _hookexec<br/>    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:262: in pytest_pycollect_makeitem<br/>    return list(collector._genfunctions(name, obj))<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:489: in _genfunctions<br/>    self.ihook.pytest_generate_tests.call_extra(methods, dict(metafunc=metafunc))<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:292: in call_extra<br/>    return self(**kwargs)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_hooks.py:265: in __call__<br/>    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\pluggy\_manager.py:80: in _hookexec<br/>    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:148: in pytest_generate_tests<br/>    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\python.py:1272: in parametrize<br/>    argnames, parametersets = ParameterSet._for_parametrize(<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\mark\structures.py:160: in _for_parametrize<br/>    parameters = cls._parse_parametrize_parameters(argvalues, force_tuple)<br/>..\..\..\.virtualenvs\sysdigTests-0GLMVJ1M\lib\site-packages\_pytest\mark\structures.py:146: in _parse_parametrize_parameters<br/>    return [<br/><span class="error">E   TypeError: &#x27;function&#x27; object is not iterable</span><br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">tests/test_api_clusters.py::test_api_clusters</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw0] win32 -- Python 3.10.4 C:\Users\azuniga\.virtualenvs\sysdigTests-0GLMVJ1M\Scripts\python.exe<br/>[gw0] win32 -- Python 3.10.4 C:\Users\azuniga\.virtualenvs\sysdigTests-0GLMVJ1M\Scripts\python.exe[gw0] win32 -- Python 3.10.4 C:\Users\azuniga\.virtualenvs\sysdigTests-0GLMVJ1M\Scripts\python.exe<br/><br/>clusters = [&#x27;https://eu1.app.sysdig.com/#/login&#x27;, &#x27;https://app.sysdigcloud.com/#/login&#x27;, &#x27;https://us2.app.sysdig.com/#/login&#x27;, &#x27;https://app.au1.sysdig.com/#/login&#x27;]<br/><br/>    @pytest.mark.api_tests<br/>    def test_api_clusters(clusters):<br/>&gt;       for cluster in clusters():<br/><span class="error">E       TypeError: &#x27;list&#x27; object is not callable</span><br/><br/>tests\test_api_clusters.py:11: TypeError[gw0] win32 -- Python 3.10.4 C:\Users\azuniga\.virtualenvs\sysdigTests-0GLMVJ1M\Scripts\python.exe<br/></div></td></tr></tbody></table></body></html>
